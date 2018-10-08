@@ -1,0 +1,31 @@
+/* font thing
+    font-family: 'K2D', sans-serif;
+    font-family: 'Niramit', sans-serif;
+    font-family: 'Maven Pro', sans-serif;
+    font-family: 'Mali', cursive;
+    font-family: 'Space Mono', monospace;
+    font-family: 'Short Stack', cursive;
+*/
+html, body{
+  font-family: "Maven Pro",sans-serif;
+}
+footer{
+  margin: auto;
+  padding: 0;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+}
+
+#head-thing{
+  text-align: center;
+}
+#about-me{}
+#social-media{
+  
+}
+#my-skills{}
+#my-pic{
+  width: 100%;
+}
