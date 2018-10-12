@@ -6,56 +6,72 @@
     <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/skeleton.css"/>
     <link rel="stylesheet" href="css/sammid.css">
-     <link href="https://fonts.googleapis.com/css?family=K2D|Mali|Maven+Pro|Niramit|Short+Stack|Space+Mono" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=K2D|Mali|Maven+Pro|Niramit|Short+Stack|Space+Mono" rel="stylesheet"> 
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
-    <header id="head-thing">
+    <header class="head-thing">
       <br>
       <h3>Samantha Medeiros</h3>
-      <i style="font-family:'Space Mono',monospace">a simple portfolio page</i>
+      <p>a simple portfolio page</p>
     </header>
     <div class="container">
-    <div id="about-me">
-      <h3>About me</h3>
-      <div class="row">
-       <div class="three columns">
-         <img id="my-pic" src="picture_me.jpeg" alt="sammid37">
-       </div>
-       <div class="nine columns">
-         <b>Samantha Medeiros, 19,</b>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-         <div>
-           <a href="#" style="padding: 0.5em;background-color:green;border-radius:10%">tumblr</a> <a href="#" id="socila-media">twitter</a> <a href="#" id="socila-media">instagram</a>
-         </div>
-       </div>
+      <div class="about">
+        <img src="" alt="myself">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing <a href="#">elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
-      <br>
-      
+      <br><br><br>
+      <div class="skills">
+        <h3><i data-feather="edit-3"></i>  Illustration Skills</h3>
+        <label>Paint Tool SAI</label>
+        <div class="skill-bar">
+          <div class="skill-content" id="illustration" style="width:80%;"></div>
+        </div>
+        <br>
+        <label>Photoshop</label>
+        <div class="skill-bar">
+          <div class="skill-content" id="illustration" style="width:40%;"></div>
+        </div>
+        <br><br><br>
+        <h3><i data-feather="terminal"></i>  Programming Skills</h3>
+        <label>HTML/CSS</label>
+        <div class="skill-bar">
+          <div class="skill-content" id="programming" style="width:80%;"></div>
+        </div>
+        <br>
+        <label>PHP</label>
+        <div class="skill-bar">
+          <div class="skill-content" id="programming" style="width:50%;"></div>
+        </div>
+        <br>
+        <label>MySQL</label>
+        <div class="skill-bar">
+          <div class="skill-content" id="programming" style="width:50%;"></div>
+        </div>
+        <br>
+        <label>Python</label>
+        <div class="skill-bar">
+          <div class="skill-content" id="programming" style="width:40%;"></div>
+        </div>
+        <br>
+        <label>C++</label>
+        <div class="skill-bar">
+          <div class="skill-content" id="programming" style="width:30%;"></div>
+        </div>
+      </div>
     </div>
-    <div id="my-skills">
-      <h3>My skills</h3>
-      <h5>Illustration</h5>
-      <table>
-        <tbody>
-          <tr>
-            <td>Color Theory</td>
-            <td>***</td>
-          </tr>
-          <tr>
-            <td>Digital Painting</td>
-            <td>***</td>  
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      <h5>Programming</h5>
-      <div id="progress-bar">html</div>
-      
-    </div>
-    </div>
-    <footer>
+    <br><br><br>
+    <footer class="footer-thing">
       <p>Made with a good <a href="http://getskeleton.com/">skeleton</a> 
        and love by <a href="#">sammid</a></p>
+       <div class="footer-links">
+         <a href="#"><i data-feather="github"></i></a>
+         <a href="#"><i data-feather="instagram"></i></a>
+         <a href="#"><i data-feather="twitter"></i></a>
+       </div>
     </footer>
+    <script>
+      feather.replace()
+    </script>
   </body>
 </html>
