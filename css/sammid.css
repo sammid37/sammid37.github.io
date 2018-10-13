@@ -11,24 +11,65 @@ html, body{
   color: #533D4B;
 }
 
-a{
-  color:#856169;
-  text-decoration: none;
-  padding: 0.3em;
-}
-a:hover{
-  color:#533D45;
-  background-color: #a1b3c4;
-  border-radius: 5px;
-}
+a{color:#856169;text-decoration: none;}
+a:hover{color:#533D45;}
 
+blockquote{
+  /* background: #b7dcf3;
+  border: 2px solid #2c2c2c;
+  padding: 10px;
+  color: #2c2c2c;
+  box-shadow: 3px 2px 0px #2c2c2c; */
+}
 .head-thing{
   text-align: center;
   font-family:'Space Mono',monospace;
   font-style: italic;
 }
-.about{}
+.about{
+  width: 100%;
+  /* height: 20%; */
+  padding: 0.8em;
+  text-align: justify;
+  background-color: #fafafa;
+  border-radius: 5px;
+  /* background-image:  */
+  /* url('https://www.toptal.com/designers/subtlepatterns/patterns/hip-square.png'); */
+}
+.box-about{
+  /* margin: 90px auto; */
+  position: relative;
+  background-color: #FFD845;
+/* background-image: linear-gradient(90deg, #ffd2b6 0%, #F8F3E0 100%); */
+  color: #444;
+  border-radius: 5px;
+  border: 1px solid #FFD845;
+  padding: 10px;
+}
+.box-img img{
+  border-radius: 5px;
+  width: 100%;
+}
+.box-arrow{
+  position: absolute;
+  left: -9px;
+  top: 10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 8.7px 5px 0;
+  border-color: transparent #FFD845;
+  line-height: 0px;
+  _border-color: #000000 #007bff #000000 #000000;
+}
+.box-content{
+  /* margin: 10px 0; */
+}
 .skills{
+  /* background-image: url('http://realpropertyalpha.com/p/2018/04/lined-paper-background-tumblr-followershut-with-lined-paper-background-tumblr-2018.jpg'); */
+  background-color: #F5F4F0;
+  border-radius: 5px;
+  padding: 0.8em;
   width: 70%;
   margin: auto;
 }
@@ -48,24 +89,30 @@ a:hover{
   }
   #illustration{
     background-color: #ed997f;
-background-image: linear-gradient(62deg, #ed997f 0%, #ffc897 100%);
-
+    background-image: linear-gradient(62deg, #ed997f 0%, #ffc897 100%);
   }
-.footer-thing{
-  background: #a1d2c4;
+.kofi{
+  margin: auto;
   text-align: center;
-  height: 10%;  
 }
-.footer-links{
-  background-color: #FFC897;
-  padding: 0.5em;
+footer,.footer-links{
+  font-family: 'Space Mono', monospace;
+  font-size: 10pt;
+  padding-top: 0.5em;
+  background: #FFC897;
+  text-align: center;
 }
-.footer-links a{
-  margin-right: 0.8em;
-}
-.footer-links a:hover{
-  color:#856169;
+/* .footer-links a{padding: 0.5em;} */
+.footer-links a:hover{border-bottom: 1px solid #eb9375;}
+#social-links{margin-right: 1em;padding: 0.5em;}
+#social-links:hover{
+  border-bottom: 0px solid transparent;
   background-color: #f5dbcc;
   background-image: linear-gradient(0deg, #f5dbcc 0%, #FFC897 100%);
   border-radius: 5px;
+}
+.footer-links a:hover{
+  color:#856169;
+  
+  /* margin-bottom: 0.2em; */
 }
