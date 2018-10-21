@@ -27,51 +27,85 @@ blockquote{
   font-style: italic;
 }
 .about{
-  width: 100%;
-  /* height: 20%; */
-  padding: 0.8em;
-  text-align: justify;
-  background-color: #fafafa;
-  border-radius: 5px;
+  /* width: 100%; */
+  margin: auto;
+  /* text-align: justify; */
+  /* background-color: #facade; */
+  /* border-radius: 5px; */
   /* background-image:  */
   /* url('https://www.toptal.com/designers/subtlepatterns/patterns/hip-square.png'); */
 }
 .box-about{
-  /* margin: 90px auto; */
+  width:32%;
+  margin-right: auto;
+  margin-left: auto;
   position: relative;
   background-color: #FFD845;
 /* background-image: linear-gradient(90deg, #ffd2b6 0%, #F8F3E0 100%); */
   color: #444;
   border-radius: 5px;
+  padding: 0.8em;
   border: 1px solid #FFD845;
-  padding: 10px;
 }
-.box-img img{
+.box-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.8em;
+  padding: 0;
   border-radius: 5px;
-  width: 100%;
+  width: 30%;
 }
 .box-arrow{
+  /* content: ""; */
   position: absolute;
-  left: -9px;
-  top: 10px;
-  width: 0;
-  height: 0;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 8px;
   border-style: solid;
-  border-width: 5px 8.7px 5px 0;
   border-color: transparent #FFD845;
   line-height: 0px;
-  _border-color: #000000 #007bff #000000 #000000;
+  border-color: transparent transparent #FFD845 transparent;
 }
 .box-content{
+  margin-right: auto;
+  margin-left: auto;
+  width: 45%;
+  text-align: center;
   /* margin: 10px 0; */
 }
-.skills{
-  /* background-image: url('http://realpropertyalpha.com/p/2018/04/lined-paper-background-tumblr-followershut-with-lined-paper-background-tumblr-2018.jpg'); */
-  background-color: #F5F4F0;
+.box-links{
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  text-align: center;
+}
+.box-links a{
+  padding: 0.3em;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 1px solid #eb9375;
+}
+.divider{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 100%;
+  border-bottom: 1px solid #D9D8D4;
+}
+.stuff{
   border-radius: 5px;
+  background-color: #F5F4F0;
   padding: 0.8em;
-  width: 70%;
-  margin: auto;
+  width: 90%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+/* .stuff p{text-align: justify;} */
+.skills{
+  /* margin: auto; 
+  padding: 0.1em; */
 }
   .skill-bar{
     background-color: #fafafa;
@@ -80,17 +114,37 @@ blockquote{
   }
   .skill-content{
     height: 5px;
-    background-color: red;
+    /* background: #A8CABA;
+    background: linear-gradient(62deg, #A8CABA 0%, #ffc897 100%); */
+    background-image: linear-gradient(62deg, #ed997f 0%, #ffc897 100%);
+    background-color: #ed997f;
     border-radius: 5px;
   }
-  #programming{
-    background-color: #fca699;
-    background-image: linear-gradient(62deg, #fca699 0%, #ffc687 100%);
-  }
-  #illustration{
-    background-color: #ed997f;
-    background-image: linear-gradient(62deg, #ed997f 0%, #ffc897 100%);
-  }
+.project{
+  /* display: flex; */
+  /* width: 100%; */
+  /* background-color: #facade; */
+  margin: auto;
+  text-align: center;
+}
+.project-card{
+  display: inline-block;
+  width: 22%;
+  border-radius: 5px;
+  background-color: white;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+#project-title i{height: 16px}
+.project-img img{
+  width: 100%;
+    height: 140px;
+    border-radius: 5px 5px 0px 0px;
+}
+.project-desc{
+  /* background-color: #fafafa; */
+  padding: 0.3em;
+  text-align: center;}
 .kofi{
   margin: auto;
   text-align: center;
@@ -113,6 +167,4 @@ footer,.footer-links{
 }
 .footer-links a:hover{
   color:#856169;
-  
-  /* margin-bottom: 0.2em; */
 }
