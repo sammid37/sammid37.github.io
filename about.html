@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Samantha Medeiros(aka sammid)">
+    <meta name="description" content="a profile and portfolio page">
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/skeleton.css"/>
+    <!-- <link rel="stylesheet" href="css/sammid.css"> -->
+    <link rel="icon" href="https://orig00.deviantart.net/faec/f/2016/332/7/0/fox_emoji_howl_by_martith-dapvoz1.gif" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro|Space+Mono" rel="stylesheet"> 
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="js/sammid.js" charset="utf-8"></script>
+    <title>Samantha Medeiros</title>
+  </head>
+  <style media="screen">
+    body{
+      font-family: 'Maven Pro',sans-serif; 
+      background-color: #ffebe6;
+background-image: linear-gradient(180deg, #ffebe6 0%, #fcddc3 100%);
+
+      /* background-color: #FFEBE6; */
+      /* background-image: linear-gradient(0deg, #f8e1d9 0%, #ecd3d3 100%); */
+    }
+    header{
+      text-align: center;
+    }
+    #timeline{
+      margin-bottom: 90px;
+    }
+    .timeline{
+      margin: auto;
+      /* margin: 0px 0px 90px 0px; */
+      width: 70%;
+      /* top: 50%; */
+    }
+    .timeline-line{
+      height: 5px;
+      position: relative;
+      background-color: #C37481;
+      border-radius: 5px;
+      margin:auto;
+    }
+    .timeline-dot{
+      width: 15px;
+      height: 15px;
+      border-radius: 50px;
+      background-color: #C37481;
+      position: absolute;
+      display: block;
+      z-index:10;
+    }
+    .point-1{
+      left: 0%;
+      top: -5px;
+    }
+    .point-2{
+      left: 50%;
+      top: -5px;
+    }
+    .point-3{
+      left: 75%;
+      top: -5px;
+    }
+    .point-4{
+      left: 99%;
+      top: -5px;
+    }
+    .timeline-tri{
+      width: 0;
+      height: 0;
+      margin-top: 20px;
+      margin-left: 2px;
+      border-left: 5px solid transparent;
+	    border-right: 5px solid transparent;
+	    border-bottom: 10px solid #fafafa;
+    }
+    .timeline-desc{
+      margin-left: -65px;
+      width: 130px;
+      padding: 5px;
+      border-radius: 5px;
+      background-color: #fafafa;    
+    }
+    
+    footer{
+      border-top: 1px solid #bbb;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <header>
+      <h2>Samantha Medeiros</h2>
+      <p>About me page</p>
+    </header>
+    <div class="container">
+      <section class="about">
+        <h4>About</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+      <section id="timeline">
+        <h4>Timeline</h4>
+        <div class="timeline">
+          <div class="timeline-line">
+            <div class="timeline-dot point-1">
+              <div class="timeline-tri"></div>
+              <div class="timeline-desc">
+                  2015
+              </div>
+            </div>
+            <div class="timeline-dot point-2">
+              <div class="timeline-tri"></div>
+              <div class="timeline-desc">
+                  2017
+              </div>
+            </div>
+            <div class="timeline-dot point-3">
+              <div class="timeline-tri"></div>
+              <div class="timeline-desc">
+                  2018
+              </div>
+            </div>
+            <div class="timeline-dot point-4">
+              <div class="timeline-tri"></div>
+              <div class="timeline-desc">
+                  2020?
+              </div>
+            </div>
+          </div>  
+        </div>
+        
+      </section>
+      <section class="contact">
+        <h4>Contact</h4>
+        <ul>
+          <li>mail:</li>
+          <li>twitter:</li>
+          <li>github:</li>
+          <li>instagram:</li>
+          <li>behance:</li>
+        </ul>
+      </section>
+    </div>
+    <footer>Samantha Medeiros</footer>
+  </body>
+</html>
