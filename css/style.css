@@ -80,7 +80,7 @@ nav a {
 
 #landing h2 {
   color: var(--rose-moon-base);
-  width: 480px;
+  width: 61%;
 }
 
 #landing h2::first-letter{
@@ -159,6 +159,7 @@ nav a {
   text-align: justify;
 }
 
+/*! Tornar esta seção mais responsiva */
 #profile-text h3 {
   padding-top: 40px;
 }
