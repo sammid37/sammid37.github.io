@@ -1,148 +1,201 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <title>Samantha Medeiros</title>
-    <meta charset="utf-8">
-    <meta name="author" content="Samantha Medeiros(aka sammid)">
-    <meta name="description" content="a profile and portfolio page">
-    <link rel="stylesheet" href="css/normalize.css"/>
-    <link rel="stylesheet" href="css/skeleton.css"/>
-    <link rel="stylesheet" href="css/sammid.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=K2D|Mali|Maven+Pro|Niramit|Short+Stack|Space+Mono" rel="stylesheet"> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
-    <script src="js/sammid.js" charset="utf-8"></script>
-  </head>
-  <body>
-    <header class="head-thing">
-      <br>
-      <h3>Samantha Medeiros</h3>
-      <p>a simple portfolio page</p>
+
+    <!-- My Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Fonts :D  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+
+    <title>sammid37</title>
+</head>
+<body>
+    <!-- Menu de Navegação -->
+    <nav id="navigation">
+        <img src="" alt="sammid37" id="icon">
+        <a href="/">Home</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="/card.html">Card</a>
+        <a href="#"><i data-feather="moon" style="stroke: var(--rose-main-rose)"></i></a>
+    </nav>
+    <!-- Cabeçalho -->
+    <header id="landing">
+        <div class="container">
+            <h2>Com atenção aos detalhes e um olhar criativo se faz uma boa base.</h2>
+            <h6>este é o meu portfolio :)</h6>
+            <br>
+            <input type="button" id="click" value="Download CV">
+            <input type="button" id="click" value="nothing here">
+        </div>
     </header>
+    <br>
+    <!-- ------------------------------------------- Work ------------------------------------------- -->
+    <div id="work">
+        <div class="column">
+            <div class="container">
+                <h3>Work</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis delectus fugiat accusantium consequuntur. Non maxime at esse vel unde, itaque veniam quia repudiandae minima quam odit, animi, deleniti labore. Eius.</p>
+                <div class="row">
+                    <div class="column">
+                        <a href="https://github.com/sammid37/lar-patinhas"><img src="https://gh-card.dev/repos/sammid37/lar-patinhas.svg"></a>
+                    </div>
+                    <div class="column">
+                        <a href="https://github.com/sammid37/TC-webscrapper"><img src="https://gh-card.dev/repos/sammid37/TC-webscrapper.svg"></a>
+                    </div>
+                    <div class="column">
+                        <a href="https://github.com/sammid37/spotipy-projects"><img src="https://gh-card.dev/repos/sammid37/spotipy-projects.svg"></a>
+                    </div>
+                </div>
+                <br>
+                <h4>Skills</h4>
+                <div class="row">
+                    <div class="column" id="programming">
+                        <h5>.Programming</h5>
+                        <label for="">Web Development (HTML, CSS, Java Script)</label>
+                        <div id="skill-bar">
+                            <div id="skill-progress" style="width: 80%;"></div>
+                        </div>
+                        <label for="">Python</label>
+                        <div id="skill-bar">
+                            <div id="skill-progress" style="width: 70%;"></div>
+                        </div>
+                        <label for="">C/C++</label>
+                        <div id="skill-bar">
+                            <div id="skill-progress" style="width: 55%;"></div>
+                        </div>
+                        <label for="">MySQL</label>
+                        <div id="skill-bar">
+                            <div id="skill-progress" style="width: 60%;"></div>
+                        </div>
+
+
+                    </div>
+                    <div class="column" id="frameworks">
+                        <h5>.Frameworks</h5>
+                        <label for="">Flask</label>
+                        <div id="skill-bar">
+                            <div id="skill-progress" style="width: 60%;"></div>
+                        </div>
+                        <label for="">Laravel</label>
+                        <div id="skill-bar">
+                            <div id="skill-progress" style="width: 60%;"></div>
+                        </div>
+                        <label for="">React JS</label>
+                        <div id="skill-bar">
+                            <div id="skill-progress" style="width: 45%;"></div>
+                        </div>
+                        <label for="">React Native</label>
+                        <div id="skill-bar">
+                            <div id="skill-progress" style="width: 40%;"></div>
+                        </div>
+
+
+                    </div>
+                    <div class="column" id="art">
+                        <h5>.Art</h5>
+                        <label for="">Digital Art</label>
+                        <div id="skill-bar">
+                            <div id="skill-progress" style="width: 80%;"></div>
+                        </div>
+                        <label for="">Traditional Art</label>
+                        <div id="skill-bar">
+                            <div id="skill-progress" style="width: 80%;"></div>
+                        </div>
+                        <label for="">2D Animation</label>
+                        <div id="skill-bar">
+                            <div id="skill-progress" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+        
+    <!-- ------------------------------------------- About ------------------------------------------- -->
+    <div class="row" id="about">
+        <div class="column column-60" id="profile-text">
+            <h2>About me...</h2>
+            <h3>Samantha Medeiros</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos hic perspiciatis dicta ab quisquam corrupti deleniti eos fugiat modi dolor corporis odio, sapiente iusto eligendi aliquam consequatur aut aspernatur porro.</p>
+        </div>
+        <div class="column column-40" id="profile-frame">
+            <img id="profile-pic" src="https://64.media.tumblr.com/fe9d9bc6328936f56eb31d68de593a4c/b68e22cf44fb47a4-d1/s1280x1920/3f0eef731ccfd428a0d67665a717cb1420baea27.jpg" alt="">
+        </div>
+        
+    </div>
+
+    <!-- ------------------------------------------- Contato ------------------------------------------- -->
     <div class="container">
-      <div class="about">  
-        <img class="box-img" src="picture_me2" alt="a portrait">  
-        <div class="box-content">
-          <p>
-            Born in September, 1999 and I am known as the art kid, but in early
-            2012 I discovered I love web design. Another surprise for me was web
-            development which I am loving a little bit more. Call me Sammid or 
-            just Samantha.
-          </p>
-	<p>test test</p>
-        </div>      
-      </div>
-      <div class="box-links">
-        <a href="#skills">skills</a>
-        <a href="#projects">projects</a>
-        <a href="alternativeindex.html">something else</a>
-      </div>
-      <br><br>
-      <!-- SKILLS -->
-      <div class="stuff">
-        <div class="row skills" id="skills">
-          
-          <!-- illustration -->
-          <div class="four columns">
-            <h4 id="illustration"><i data-feather="edit-3"></i>  Illustration</h4>
-            <label>Paint Tool SAI</label>
-            <div class="skill-bar">
-              <div class="skill-content" style="width:80%;"></div>
-            </div>
-            <br>
-            <label> Adobe Photoshop</label>
-            <div class="skill-bar">
-              <div class="skill-content" style="width:40%;"></div>
-            </div>
-            <br>
-            <label>Adobe Illustrator</label>
-            <div class="skill-bar">
-              <div class="skill-content" style="width:40%;"></div>
-            </div>
-          </div>
-          <!-- programming -->
-          <div class="four columns">
-            <h4 id="programming"><i data-feather="terminal"></i>  Programming</h4>
-            <label>HTML/CSS</label>
-            <div class="skill-bar">
-              <div class="skill-content" style="width:80%;"></div>
-            </div>
-            <br>
-            <label>JavaScript</label>
-            <div class="skill-bar">
-              <div class="skill-content" style="width:50%"></div>
-            </div>
-            <br>
-            <label>PHP</label>
-            <div class="skill-bar">
-              <div class="skill-content" style="width:50%;"></div>
-            </div>
-            <br>
-            <label>MySQL</label>
-            <div class="skill-bar">
-              <div class="skill-content" style="width:50%;"></div>
-            </div>
-            <br>
-            <label>Python</label>
-            <div class="skill-bar">
-              <div class="skill-content" style="width:40%;"></div>
-            </div>
-            <br>
-            <label>C++</label>
-            <div class="skill-bar">
-              <div class="skill-content" style="width:30%;"></div>
-            </div>
-          </div>
-          <!-- frameworks -->
-          <div class="four columns">
-            <h4 id="frameworks"><i data-feather="layout"></i> Frameworks</h4>
-            <label>Materialize <a href="https://materializecss.com/"><i data-feather="external-link" style="height:16px"></i></a></label>
-            <div class="skill-bar">
-              <div class="skill-content" style="width:90%"></div>
-            </div>
-            <br>
-            <label>BootStrap <a href="http://getbootstrap.com/"><i data-feather="external-link" style="height:16px"></i></a></label>
-            <div class="skill-bar">
-              <div class="skill-content" style="width:85%"></div>
-            </div>
-            <br>
-            <label>Skeleton <a href="http://getskeleton.com/"><i data-feather="external-link" style="height:16px"></i></a></label>
-            <div class="skill-bar">
-              <div class="skill-content" style="width:80%"></div>
-            </div>
-            <br>
-            <label>Laravel <a href="https://laravel.com/"><i data-feather="external-link" style="height:16px"></i></a></label>
-            <div class="skill-bar">
-              <div class="skill-content" style="width:40%;"></div>          
-            </div>  
-          </div>
-        </div>
         <br><br>
-        <div class="row project" id="projects">
-          <h2>Projects: section in progress</h2>
+        <h3>Contato</h3>
+        <br>
+        <div class="row">
+            <div class="column">
+                <p id="contact-info">
+                    <i class="feather" data-feather="mail" style="margin-right: 7px; stroke: var(--rose-moon-pine); width: 21px;"></i> samanthadmedeiros37@gmail.com
+                </p>
+                <p id="contact-info">
+                    <i class="feather" data-feather="mail" style="margin-right: 7px; stroke: var(--rose-moon-pine); width: 21px;"></i> 
+                    samantha.medeiros@academico.ufpb.br
+                </p>
+                <p id="contact-info">
+                    <i class="feather" data-feather="map-pin" style="margin-right: 7px; stroke: var(--rose-moon-pine); width: 21px;"></i> 
+                    João Pessoa-PB, Brazil
+                </p>
+                <br>
+                <!-- Buy me a kofi -->
+                <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy me a coffee', 'var(--rose-moon-pine)', 'sammid37');kofiwidget2.draw();</script> 
+            </div>
+            <!-- Redes sociais -->
+            <div class="column">
+                <a href="https://instagram.com/sammid37/">
+                    <p id="contact-social">
+                        <i class="feather" data-feather="instagram" style="margin-right: 7px; stroke: var(--rose-main-love); width: 21px;"></i>
+                        Instagram
+                    </p>
+                </a> 
+                <a href="https://twitter.com/sammid37">
+                    <p id="contact-social">
+                        <i class="feather" data-feather="twitter" style="margin-right: 7px; stroke: var(--rose-main-love); width: 21px;"></i>
+                        Twitter
+                    </p>
+                </a>
+                <a href="https://github.com/sammid37">
+                    <p id="contact-social">
+                        <i class="feather" data-feather="github" style="margin-right: 7px; stroke: var(--rose-main-love); width: 21px;"></i>
+                        GitHub
+                    </p>
+                </a>
+            </div>
+            <div class="column" id="contact-pic">
+                <!-- Lorem, ipsum dolor sit amet consectetur adipisicing elit.  -->
+                <img src="" alt="">     
+            </div>
         </div>
-      </div>
     </div>
     <br><br>
-    <div class="kofi">
-      <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy me a coffee', '#eb9375', 'E1E4A8YT');kofiwidget2.draw();</script> 
-    </div>
-    <br><br><br>
-    <footer class="footer-links">
-      <p>
-        Made with <a href="http://getskeleton.com/">skeleton</a> and love by <a href="#">sammid</a>
-      </p>
-      <p>
-        <a href="https://twitter.com/sammid_art" id="social-links"><i class="fab fa-twitter fa-2x"></i></a>
-        <a href="https://codepen.io/sammid37/" id="social-links"><i class="fab fa-codepen fa-2x"></i></a>
-        <a href="https://behance.net/sammid/" id="social-links"><i class="fab fa-behance fa-2x"></i></a>
-        <a href="https://github.com/sammid37" id="social-links"><i class="fab fa-github-alt fa-2x"></i></a>
-        <a href="https://instagram.com/sammid_art" id="social-links"><i class="fab fa-instagram fa-2x"></i></a>
-      </p>
-       <div class="footer-links"></div>
-    </footer>
+    <footer>Samantha Medeiros © 2022, <br> Built with <a href="https://milligram.io">Milligram</a> and <i>painted with</i> <a href="https://rosepinetheme.com/palette">Rosé Pine</a> colors.</footer>
     <script>
-      feather.replace()
+        feather.replace({ class: 'feather', 'width': '21px'})
     </script>
-  </body>
+</body>
 </html>
