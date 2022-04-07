@@ -9,6 +9,7 @@
   --rose-dawn-gold: #ea9d34;
   --rose-main-gold: #f6c177;
   --rose-moon-pine: #3e8fb0;
+  --rose-main-foam: #9ccfd8;
   --rose-moon-rose: #ea9a97;
   --rose-main-rose: #ebbcba;
   --rose-dawn-rose: #d7827e;
@@ -101,9 +102,24 @@ nav a {
   text-transform: uppercase;
 }
 
+#click-pink {
+  margin-right: 12px;
+  background-color: var(--rose-main-love);
+  border: none;
+  color: var(--rose-dawn-base);
+  font-family: 'Space Mono', monospace;
+  font-weight: 300;
+  font-style: italic;
+  text-transform: lowercase;
+}
+
 /* ---------------------------------------------- Work Section */
 #work {
   margin: 80px 0px 80px 0px;
+}
+
+#work-text::first-letter{
+  border-top: 7px solid var(--rose-moon-rose);
 }
 
 #work label {
@@ -192,6 +208,9 @@ nav a {
   padding-top: 40px;
 }
 
+#contact-text::first-letter {
+  border-top: 7px solid var(--rose-moon-pine);
+}
 
 #contact-info, #contact-social {
   display: flex;
@@ -200,8 +219,8 @@ nav a {
 }
 
 #contact-pic {
-  background-color: var(--rose-main-gold);
-  border: 32px solid var(--rose-main-gold);
+  /* background-color: var(--rose-main-gold); */
+  /* border: 32px solid var(--rose-main-gold); */
 }
 
 footer {

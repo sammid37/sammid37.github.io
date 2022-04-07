@@ -29,7 +29,7 @@
     <!-- Menu de Navegação -->
     <nav id="navigation">
         <img src="" alt="sammid37" id="icon">
-        <a href="/">Home</a>
+        <a href="/"><i data-feather="home" style="stroke: var(--rose-main-love)"></i></a>
         <a href="#work">Work</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
@@ -51,7 +51,7 @@
     <div id="work">
         <div class="column">
             <div class="container">
-                <h3>Work</h3>
+                <h3 id="work-text">Work</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis delectus fugiat accusantium consequuntur. Non maxime at esse vel unde, itaque veniam quia repudiandae minima quam odit, animi, deleniti labore. Eius.</p>
                 <div class="row">
                     <div class="column">
@@ -123,6 +123,8 @@
                         <div id="skill-bar">
                             <div id="skill-progress" style="width: 50%;"></div>
                         </div>
+                        <br>
+                        <input class="button" id="click-pink" type="button" value="See my artworks" href="/">
                     </div>
                 </div>
             </div>
@@ -144,9 +146,9 @@
     </div>
 
     <!-- ------------------------------------------- Contato ------------------------------------------- -->
-    <div class="container">
+    <div class="container" id="contact">
         <br><br>
-        <h3>Contato</h3>
+        <h3 id="contact-text">Contact</h3>
         <br>
         <div class="row">
             <div class="column">
@@ -167,6 +169,12 @@
             </div>
             <!-- Redes sociais -->
             <div class="column">
+                <a href="https://www.linkedin.com/in/sammid37/">
+                    <p id="contact-social">
+                        <i class="feather" data-feather="linkedin" style="margin-right: 7px; stroke: var(--rose-main-love); width: 21px;"></i>
+                        LinkedIN
+                    </p>
+                </a>
                 <a href="https://instagram.com/sammid37/">
                     <p id="contact-social">
                         <i class="feather" data-feather="instagram" style="margin-right: 7px; stroke: var(--rose-main-love); width: 21px;"></i>
@@ -183,6 +191,12 @@
                     <p id="contact-social">
                         <i class="feather" data-feather="github" style="margin-right: 7px; stroke: var(--rose-main-love); width: 21px;"></i>
                         GitHub
+                    </p>
+                </a>
+                <a href="https://www.artstation.com/sammid37">
+                    <p id="contact-social">
+                        <i class="feather" data-feather="dribbble" style="margin-right: 7px; stroke: var(--rose-main-love); width: 21px;"></i>
+                        ArtStation
                     </p>
                 </a>
             </div>
