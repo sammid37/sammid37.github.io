@@ -14,6 +14,8 @@
 
     <!-- My Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- My Scripts -->
+    <script src="js/index.js"></script>
     <!-- Fonts :D  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,190 +24,214 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
+    <style>
+        ::selection {
+            background-color: #faf4ed;
+            color: #ea9a97;
+        }
+    </style>
 
     <title>sammid37</title>
 </head>
 <body>
     <!-- Menu de Navegação -->
-    <nav id="navigation">
-        <img src="" alt="sammid37" id="icon">
-        <a href="/"><i data-feather="home" style="stroke: var(--rose-main-love)"></i></a>
-        <a href="#work">Work</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a href="/card.html">Card</a>
-        <a href="#"><i data-feather="moon" style="stroke: var(--rose-main-rose)"></i></a>
-    </nav>
     <!-- Cabeçalho -->
-    <header id="landing">
-        <div class="container">
-            <h2>Com atenção aos detalhes e um olhar criativo se faz uma boa base.</h2>
-            <h6>este é o meu portfolio :)</h6>
-            <br>
-            <input type="button" id="click" value="Download CV">
-            <input type="button" id="click" value="nothing here">
-        </div>
+    <header class="header">
+        <img src="" alt="logo" class="header-logo">
+        <nav class="header-nav">
+            <a href="/" class="header-nav-item">Home</a>
+            <a href="#work" class="header-nav-item">Work</a>
+            <a href="#about" class="header-nav-item">About</a> 
+            <a href="#contact" class="header-nav-item">Contact</a>
+            <a href="#" class="header-nav-item" title="Dark Mode soon"><i data-feather="moon" style="stroke: var(--rose-main-rose)"></i></a>
+        </nav>
     </header>
-    <br>
-    <!-- ------------------------------------------- Work ------------------------------------------- -->
-    <div id="work">
-        <div class="column">
+   
+    <main>
+        <div class="landing">
             <div class="container">
-                <h3 id="work-text">Work</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis delectus fugiat accusantium consequuntur. Non maxime at esse vel unde, itaque veniam quia repudiandae minima quam odit, animi, deleniti labore. Eius.</p>
-                <div class="row">
-                    <div class="column">
-                        <a href="https://github.com/sammid37/lar-patinhas"><img src="https://gh-card.dev/repos/sammid37/lar-patinhas.svg"></a>
+                <h2>Com atenção aos detalhes e um olhar criativo se faz uma boa base.</h2>
+                <h6>este é o meu portfolio :)</h6>
+                <br>
+                <a href="/files/cv_sammid37.pdf">
+                    <input type="button" id="click" value="Download CV">
+                </a>
+                <a href="#contact">
+                    <input type="button" id="click" value="Contato">
+                </a>
+            </div>
+        </div>
+    
+        <!-- ------------------------------------------- Work ------------------------------------------- -->
+        <div id="work">
+            <div class="column">
+                <div class="container">
+                    <h3 id="work-text">Work</h3>
+                    <p>Para mais, visite meu perfil no <a href="https://github.com/sammid37/">GitHub</a> e meu perfil no <a href="">ArtStation</a>.</p>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis delectus fugiat accusantium consequuntur</p> -->
+                    <div class="row">
+                        <div class="column">
+                            <a href="https://github.com/sammid37/lar-patinhas"><img src="https://gh-card.dev/repos/sammid37/lar-patinhas.svg"></a>
+                        </div>
+                        <div class="column">
+                            <a href="https://github.com/sammid37/TC-webscrapper"><img src="https://gh-card.dev/repos/sammid37/TC-webscrapper.svg"></a>
+                        </div>
+                        <div class="column">
+                            <a href="https://github.com/sammid37/spotipy-projects"><img src="https://gh-card.dev/repos/sammid37/spotipy-projects.svg"></a>
+                        </div>
                     </div>
-                    <div class="column">
-                        <a href="https://github.com/sammid37/TC-webscrapper"><img src="https://gh-card.dev/repos/sammid37/TC-webscrapper.svg"></a>
-                    </div>
-                    <div class="column">
-                        <a href="https://github.com/sammid37/spotipy-projects"><img src="https://gh-card.dev/repos/sammid37/spotipy-projects.svg"></a>
+                    <br>
+                    <h4>Skills</h4>
+                    <div class="row">
+                        <div class="column" id="programming">
+                            <h5>.Programming</h5>
+                            <label for="">Web Development (HTML, CSS, Java Script)</label>
+                            <div id="skill-bar">
+                                <div id="skill-progress" style="width: 85%;"></div>
+                            </div>
+                            <label for="">Python</label>
+                            <div id="skill-bar">
+                                <div id="skill-progress" style="width: 70%;"></div>
+                            </div>
+                            <label for="">C/C++</label>
+                            <div id="skill-bar">
+                                <div id="skill-progress" style="width: 50%;"></div>
+                            </div>
+                            <label for="">PHP</label>
+                            <div id="skill-bar">
+                                <div id="skill-progress" style="width: 40%;"></div>
+                            </div>
+                            <label for="">MySQL</label>
+                            <div id="skill-bar">
+                                <div id="skill-progress" style="width: 45%;"></div>
+                            </div>
+
+
+                        </div>
+                        <div class="column" id="frameworks">
+                            <h5>.Frameworks</h5>
+                            <label for="">Flask</label>
+                            <div id="skill-bar">
+                                <div id="skill-progress" style="width: 60%;"></div>
+                            </div>
+                            <label for="">Laravel</label>
+                            <div id="skill-bar">
+                                <div id="skill-progress" style="width: 45%;"></div>
+                            </div>
+                            <label for="">React JS</label>
+                            <div id="skill-bar">
+                                <div id="skill-progress" style="width: 45%;"></div>
+                            </div>
+                            <label for="">React Native</label>
+                            <div id="skill-bar">
+                                <div id="skill-progress" style="width: 40%;"></div>
+                            </div>
+
+
+                        </div>
+                        <div class="column" id="art">
+                            <h5>.Art</h5>
+                            <label for="">Digital Art</label>
+                            <div id="skill-bar">
+                                <div id="skill-progress" style="width: 80%;"></div>
+                            </div>
+                            <label for="">Traditional Art</label>
+                            <div id="skill-bar">
+                                <div id="skill-progress" style="width: 85%;"></div>
+                            </div>
+                            <label for="">2D Animation</label>
+                            <div id="skill-bar">
+                                <div id="skill-progress" style="width: 50%;"></div>
+                            </div>
+                            <br>
+                            <a href="https://www.artstation.com/sammid37">
+                                <input class="button" id="click-pink" type="button" value="See my artworks" href="/">
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <br>
-                <h4>Skills</h4>
-                <div class="row">
-                    <div class="column" id="programming">
-                        <h5>.Programming</h5>
-                        <label for="">Web Development (HTML, CSS, Java Script)</label>
-                        <div id="skill-bar">
-                            <div id="skill-progress" style="width: 80%;"></div>
-                        </div>
-                        <label for="">Python</label>
-                        <div id="skill-bar">
-                            <div id="skill-progress" style="width: 70%;"></div>
-                        </div>
-                        <label for="">C/C++</label>
-                        <div id="skill-bar">
-                            <div id="skill-progress" style="width: 55%;"></div>
-                        </div>
-                        <label for="">MySQL</label>
-                        <div id="skill-bar">
-                            <div id="skill-progress" style="width: 60%;"></div>
-                        </div>
 
+            </div>
+        </div>
+            
+        <!-- ------------------------------------------- About ------------------------------------------- -->
+        <div class="row" id="about">
+            <div class="column column-60" id="profile-text">
+                <h2>About me...</h2>
+                <h3>Samantha Medeiros</h3>
+                <p>Sou técnica em Informática pelo Instituto Federal do Rio Grande do Norte (IFRN) e estudante do bacharelado de Ciência da Computação pela Universidade Federal da Paraíba (UFPB). Possuo interesse em atuar como <b>Web Dev <i>Front-end</i></b> apesar de gostar muito da área de <b><i>Game Dev</i></b>.</p>
+                <p>
+                    No tempo livre costumo fazer o que mais amo: <b><i>desenhar</i></b> e aprender <b><i>animação 2D</i></b>.
+                </p>
+            </div>
+            <div class="column column-40" id="profile-frame">
+                <img id="profile-pic" src="files/profile-picture.jpg" alt="profile-picture">
+            </div>
+            
+        </div>
 
-                    </div>
-                    <div class="column" id="frameworks">
-                        <h5>.Frameworks</h5>
-                        <label for="">Flask</label>
-                        <div id="skill-bar">
-                            <div id="skill-progress" style="width: 60%;"></div>
-                        </div>
-                        <label for="">Laravel</label>
-                        <div id="skill-bar">
-                            <div id="skill-progress" style="width: 60%;"></div>
-                        </div>
-                        <label for="">React JS</label>
-                        <div id="skill-bar">
-                            <div id="skill-progress" style="width: 45%;"></div>
-                        </div>
-                        <label for="">React Native</label>
-                        <div id="skill-bar">
-                            <div id="skill-progress" style="width: 40%;"></div>
-                        </div>
-
-
-                    </div>
-                    <div class="column" id="art">
-                        <h5>.Art</h5>
-                        <label for="">Digital Art</label>
-                        <div id="skill-bar">
-                            <div id="skill-progress" style="width: 80%;"></div>
-                        </div>
-                        <label for="">Traditional Art</label>
-                        <div id="skill-bar">
-                            <div id="skill-progress" style="width: 80%;"></div>
-                        </div>
-                        <label for="">2D Animation</label>
-                        <div id="skill-bar">
-                            <div id="skill-progress" style="width: 50%;"></div>
-                        </div>
-                        <br>
-                        <input class="button" id="click-pink" type="button" value="See my artworks" href="/">
-                    </div>
+        <!-- ------------------------------------------- Contato ------------------------------------------- -->
+        <div class="container" id="contact">
+            <br><br>
+            <h3 id="contact-text">Contact</h3>
+            <br>
+            <div class="row">
+                <div class="column">
+                    <p id="contact-info">
+                        <i class="feather" data-feather="mail" style="margin-right: 7px; stroke: var(--rose-moon-pine); width: 21px;"></i> samanthadmedeiros37@gmail.com
+                    </p>
+                    <p id="contact-info">
+                        <i class="feather" data-feather="mail" style="margin-right: 7px; stroke: var(--rose-moon-pine); width: 21px;"></i> 
+                        samantha.medeiros@academico.ufpb.br
+                    </p>
+                    <p id="contact-info">
+                        <i class="feather" data-feather="map-pin" style="margin-right: 7px; stroke: var(--rose-moon-pine); width: 21px;"></i> 
+                        João Pessoa-PB, Brazil
+                    </p>
+                    <br>
+                    <!-- Buy me a kofi -->
+                    <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy me a coffee', 'var(--rose-moon-pine)', 'sammid37');kofiwidget2.draw();</script> 
+                </div>
+                <!-- Redes sociais -->
+                <div class="column">
+                    <a href="https://www.linkedin.com/in/sammid37/">
+                        <p id="contact-social">
+                            <i class="feather" data-feather="linkedin" style="margin-right: 7px; stroke: var(--rose-main-love); width: 21px;"></i>
+                            LinkedIN
+                        </p>
+                    </a>
+                    <a href="https://instagram.com/sammid37/">
+                        <p id="contact-social">
+                            <i class="feather" data-feather="instagram" style="margin-right: 7px; stroke: var(--rose-main-love); width: 21px;"></i>
+                            Instagram
+                        </p>
+                    </a> 
+                    <a href="https://twitter.com/sammid37">
+                        <p id="contact-social">
+                            <i class="feather" data-feather="twitter" style="margin-right: 7px; stroke: var(--rose-main-love); width: 21px;"></i>
+                            Twitter
+                        </p>
+                    </a>
+                    <a href="https://github.com/sammid37">
+                        <p id="contact-social">
+                            <i class="feather" data-feather="github" style="margin-right: 7px; stroke: var(--rose-main-love); width: 21px;"></i>
+                            GitHub
+                        </p>
+                    </a>
+                    <a href="https://www.artstation.com/sammid37">
+                        <p id="contact-social">
+                            <i class="feather" data-feather="dribbble" style="margin-right: 7px; stroke: var(--rose-main-love); width: 21px;"></i>
+                            ArtStation
+                        </p>
+                    </a>
+                </div>
+                <div class="column" id="contact-pic">
+                    <!-- Lorem, ipsum dolor sit amet consectetur adipisicing elit.  -->
+                    <img src="" alt="">     
                 </div>
             </div>
-
         </div>
-    </div>
-        
-    <!-- ------------------------------------------- About ------------------------------------------- -->
-    <div class="row" id="about">
-        <div class="column column-60" id="profile-text">
-            <h2>About me...</h2>
-            <h3>Samantha Medeiros</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos hic perspiciatis dicta ab quisquam corrupti deleniti eos fugiat modi dolor corporis odio, sapiente iusto eligendi aliquam consequatur aut aspernatur porro.</p>
-        </div>
-        <div class="column column-40" id="profile-frame">
-            <img id="profile-pic" src="https://64.media.tumblr.com/fe9d9bc6328936f56eb31d68de593a4c/b68e22cf44fb47a4-d1/s1280x1920/3f0eef731ccfd428a0d67665a717cb1420baea27.jpg" alt="">
-        </div>
-        
-    </div>
-
-    <!-- ------------------------------------------- Contato ------------------------------------------- -->
-    <div class="container" id="contact">
-        <br><br>
-        <h3 id="contact-text">Contact</h3>
-        <br>
-        <div class="row">
-            <div class="column">
-                <p id="contact-info">
-                    <i class="feather" data-feather="mail" style="margin-right: 7px; stroke: var(--rose-moon-pine); width: 21px;"></i> samanthadmedeiros37@gmail.com
-                </p>
-                <p id="contact-info">
-                    <i class="feather" data-feather="mail" style="margin-right: 7px; stroke: var(--rose-moon-pine); width: 21px;"></i> 
-                    samantha.medeiros@academico.ufpb.br
-                </p>
-                <p id="contact-info">
-                    <i class="feather" data-feather="map-pin" style="margin-right: 7px; stroke: var(--rose-moon-pine); width: 21px;"></i> 
-                    João Pessoa-PB, Brazil
-                </p>
-                <br>
-                <!-- Buy me a kofi -->
-                <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy me a coffee', 'var(--rose-moon-pine)', 'sammid37');kofiwidget2.draw();</script> 
-            </div>
-            <!-- Redes sociais -->
-            <div class="column">
-                <a href="https://www.linkedin.com/in/sammid37/">
-                    <p id="contact-social">
-                        <i class="feather" data-feather="linkedin" style="margin-right: 7px; stroke: var(--rose-main-love); width: 21px;"></i>
-                        LinkedIN
-                    </p>
-                </a>
-                <a href="https://instagram.com/sammid37/">
-                    <p id="contact-social">
-                        <i class="feather" data-feather="instagram" style="margin-right: 7px; stroke: var(--rose-main-love); width: 21px;"></i>
-                        Instagram
-                    </p>
-                </a> 
-                <a href="https://twitter.com/sammid37">
-                    <p id="contact-social">
-                        <i class="feather" data-feather="twitter" style="margin-right: 7px; stroke: var(--rose-main-love); width: 21px;"></i>
-                        Twitter
-                    </p>
-                </a>
-                <a href="https://github.com/sammid37">
-                    <p id="contact-social">
-                        <i class="feather" data-feather="github" style="margin-right: 7px; stroke: var(--rose-main-love); width: 21px;"></i>
-                        GitHub
-                    </p>
-                </a>
-                <a href="https://www.artstation.com/sammid37">
-                    <p id="contact-social">
-                        <i class="feather" data-feather="dribbble" style="margin-right: 7px; stroke: var(--rose-main-love); width: 21px;"></i>
-                        ArtStation
-                    </p>
-                </a>
-            </div>
-            <div class="column" id="contact-pic">
-                <!-- Lorem, ipsum dolor sit amet consectetur adipisicing elit.  -->
-                <img src="" alt="">     
-            </div>
-        </div>
-    </div>
+    </main>
     <br><br>
     <footer>Samantha Medeiros © 2022, <br> Built with <a href="https://milligram.io">Milligram</a> and <i>painted with</i> <a href="https://rosepinetheme.com/palette">Rosé Pine</a> colors.</footer>
     <script>

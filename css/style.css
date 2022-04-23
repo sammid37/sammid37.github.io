@@ -24,7 +24,13 @@
 
 }
 
+
+/* Reset CSS */
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
   font-family: 'Questrial', sans-serif;
   color: var(--rose-dawn-text);
 }
@@ -47,31 +53,50 @@ a {
 }
 
 /* ---------------------------------------------- Navigation  */
-nav#navigation {
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 12px;
   background-color: var(--rose-dawn-base);
-  /* border-bottom: 3px solid var(--rose-moon-rose); */
-  padding: 10px;
+}
+.header-logo {
+  width: 37px;
+}
+.header-nav {
+  display: flex;
+  gap: 32px;
 }
 
-nav a {
+.header-nav-item {
   color: var(--rose-main-love);
-  text-align: center;
-  display:inline-block;
-  vertical-align:top;
 }
+/* 
 
-#navigation img {
-  width: 22px;
-  margin-left: 15%;
-  margin-right: 30%;
+@media screen and (max-width: 660px) {
+  #navigation {text-align: center;}
+  #logo {
+    float: none;
+    display: block;
+  }
+  #navigation a {float: none;}
+  
 }
+@media screen and (max-width: 550px) {
+  #navigation {overflow: visible;}
+  #navigation a {
+    display: block;
+    margin: 0;
+    text-align: right;
+  }
+  #navigation a::after {content: none;}
+}
+ */
 
-#navigation a {
-  margin: 0px 20px 0px 20px;
-}
 
 /* ---------------------------------------------- Header */
-#landing {
+.landing {
   padding-top: 10%;
   background-color: var(--rose-main-rose);
   /* background-color: #006778; */
@@ -79,16 +104,16 @@ nav a {
   max-height: 40%;
 }
 
-#landing h2 {
+.landing h2 {
   color: var(--rose-moon-base);
   width: 61%;
 }
 
-#landing h2::first-letter{
+.landing h2::first-letter{
   border-top: 7px solid var(--rose-dawn-rose);
 }
 
-#landing h6 {
+.landing h6 {
   color: var(--rose-moon-base);
 }
 
@@ -203,6 +228,16 @@ nav a {
   width: 75%;
 }
 
+@media screen and (max-width: 660px) {
+  #profile-frame {
+    padding: 0;
+  }
+  #profile-pic, #profile-text p, #profile-text h3 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
 /* ---------------------------------------------- Contact */
 #contact {
   padding-top: 40px;
