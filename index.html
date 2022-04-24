@@ -14,8 +14,10 @@
 
     <!-- My Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/sections.css">
     <!-- My Scripts -->
-    <script src="js/index.js"></script>
+    <script src="js/script.js"></script>
     <!-- Fonts :D  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,36 +36,37 @@
     <title>sammid37</title>
 </head>
 <body>
-    <header class="header">
+    <header id="header" class="header">
         <img src="" alt="logo" class="header-logo">
-        <nav class="header-nav">
+        <span id="nav-js" class="header-nav-menu"><i data-feather="menu"></i></span>
+        <nav class="header-nav" id="nav-menu">
             <a href="/" class="header-nav-item">Home</a>
             <a href="#work" class="header-nav-item">Work</a>
             <a href="#about" class="header-nav-item">About</a> 
             <a href="#contact" class="header-nav-item">Contact</a>
-            <a href="#" class="header-nav-item" title="Dark Mode soon"><i data-feather="moon" style="stroke: var(--rose-main-rose)"></i></a>
+            <a class="header-nav-item" onclick="dark_mode()" title="Dark Mode soon" id="dark-light-icon"><i data-feather="moon" style="stroke: var(--rose-main-rose)"></i></a>
         </nav>
     </header>
     <main>
-        <div class="landing">
+        <div class="landing" id="landing">
             <div class="container">
                 <h2>Com atenção aos detalhes e um olhar criativo se faz uma boa base.</h2>
                 <h6>este é o meu portfolio :)</h6>
                 <br>
                 <a href="/files/cv_sammid37.pdf">
-                    <input type="button" id="click" value="Download CV">
+                    <input type="button" id="landing-btn" value="Download CV">
                 </a>
                 <a href="#contact">
-                    <input type="button" id="click" value="Contato">
+                    <input type="button" id="landing-btn" value="Contato">
                 </a>
             </div>
         </div>
     
         <!-- ------------------------------------------- Work ------------------------------------------- -->
-        <div id="work">
+        <div id="work" class="work">
             <div class="column">
                 <div class="container">
-                    <h3 id="work-text">Work</h3>
+                    <h3 class="work-text">Work</h3>
                     <p>Para mais, visite meu perfil no <a href="https://github.com/sammid37/">GitHub</a> e meu perfil no <a href="">ArtStation</a>.</p>
                     <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis delectus fugiat accusantium consequuntur</p> -->
                     <div class="row">
@@ -142,7 +145,7 @@
                             </div>
                             <br>
                             <a href="https://www.artstation.com/sammid37">
-                                <input class="button" id="click-pink" type="button" value="See my artworks" href="/">
+                                <input class="button" id="work-btn" type="button" value="Veja minhas artes" href="/">
                             </a>
                         </div>
                     </div>
@@ -152,19 +155,18 @@
         </div>
             
         <!-- ------------------------------------------- About ------------------------------------------- -->
-        <div class="row" id="about">
-            <div class="column column-60" id="profile-text">
-                <h2>About me...</h2>
-                <h3>Samantha Medeiros</h3>
+        <div class="about" id="about">
+            <div class="about-me">
+                <h2 class="about-me-title">About me...</h2>
+                <h3 class="about-me-subtitle">Samantha Medeiros</h3>
                 <p>Sou técnica em Informática pelo Instituto Federal do Rio Grande do Norte (IFRN) e estudante do bacharelado de Ciência da Computação pela Universidade Federal da Paraíba (UFPB). Possuo interesse em atuar como <b>Web Dev <i>Front-end</i></b> apesar de gostar muito da área de <b><i>Game Dev</i></b>.</p>
                 <p>
                     No tempo livre costumo fazer o que mais amo: <b><i>desenhar</i></b> e aprender <b><i>animação 2D</i></b>.
                 </p>
             </div>
-            <div class="column column-40" id="profile-frame">
+            <div class="about-pic">
                 <img id="profile-pic" src="files/profile-picture.jpg" alt="profile-picture">
             </div>
-            
         </div>
 
         <!-- ------------------------------------------- Contato ------------------------------------------- -->
