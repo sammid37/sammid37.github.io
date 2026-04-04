@@ -2,6 +2,8 @@
 
 > Esta é v1 do meu portfolio, mas fico feliz em anunciar que ele finalmente está no ar com as principais informações sobre o meu trabalho. 
 
+![Preview](/public/preview.gif)
+
 ## Tecnologias utilizadas
 
 ![Next JS](https://img.shields.io/badge/Next-181825?style=for-the-badge&logo=next.js&logoColor=white)
