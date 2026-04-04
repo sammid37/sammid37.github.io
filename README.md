@@ -1,30 +1,20 @@
-# React + TypeScript + Vite
+# 🌼 Samantha Medeiros - Dev & Ilustradora
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Esta é v1 do meu portfolio, mas fico feliz em anunciar que ele finalmente está no ar com as principais informações sobre o meu trabalho. 
 
-Currently, two official plugins are available:
+## Tecnologias utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Next JS](https://img.shields.io/badge/Next-181825?style=for-the-badge&logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-24273a.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-179299?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![DaisyUI](https://img.shields.io/badge/daisyUI-ea76cb?style=for-the-badge&logo=daisyui&logoColor=white)
+![Phosphor Icons](https://img.shields.io/badge/phosphor-4c4f69?style=for-the-badge&logo=phosphoricons&logoColor=white)
+![Google Fonts](https://img.shields.io/badge/Google%20Fonts-e64553.svg?style=for-the-badge&logo=googlefonts&logoColor=white)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## To Do
+- [x] Implementar versão inicial
+- [ ] Adicionar ilustrações (Eu, Dudu, meus passarinhos e outros cacarecos)
+- [ ] Realizar curadoria de trabalhos artísticos
+- [ ] Adicionar mais projetos a página de projetos de software
+- [ ] Adicionar dark theme
+- [ ] Realizar melhorias no light theme
