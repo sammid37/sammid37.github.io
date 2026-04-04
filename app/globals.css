@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+    themes: ayudark --default;
+}
+
+@plugin "daisyui/theme" {
+    name: "enchated";
+    default: true;
+    prefersdark: false;
+    color-scheme: "light";
+    --color-base-100: #fdf6f0;
+    --color-base-200: #f8ece8;
+    --color-base-300: #f0d9df;
+    --color-base-content: #2d1a20;
+    --color-primary: #e8607a;
+    --color-primary-content: #fce8ec;
+    --color-secondary: #f4a35c;
+    --color-secondary-content: oklch(98% 0.022 95.277);
+    --color-accent: #2a6b5e;
+    --color-accent-content: oklch(96% 0.018 272.314);
+    --color-neutral: #2d1a20;
+    --color-neutral-content: oklch(98% 0 0);
+    --color-info: #6baed4;
+    --color-info-content: oklch(97% 0.013 236.62);
+    --color-success: #5bbfa0;
+    --color-success-content: oklch(98% 0.014 180.72);
+    --color-warning: oklch(68% 0.162 75.834);
+    --color-warning-content: oklch(98% 0.026 102.212);
+    --color-error: #e05555;
+    --color-error-content: oklch(97% 0.013 17.38);
+    --radius-selector: 0.5rem;
+    --radius-field: 0.5rem;
+    --radius-box: 0.5rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 1px;
+    --depth: 1;
+    --noise: 0;
+}
+
+@theme {
+    --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+    --font-mono: var(--font-space-mono), ui-monospace, monospace;
+}
+
+html {
+    scroll-behavior: smooth;
+}
