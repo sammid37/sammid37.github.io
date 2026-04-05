@@ -9,7 +9,7 @@ export interface Certification {
     name: string;
     issuer: string;
     year: number;
-    credentialUrl?: string[];
+    credentialUrl?: string;
 }
 
 export const educations: Education[] = [
@@ -41,24 +41,26 @@ export const certifications: Certification[] = [
         name: "Docker Criando e Gerenciando Containers",
         issuer: "Alura",
         year: 2025,
-        credentialUrl: ["https://cursos.alura.com.br/certificate/e5cb9ef3-da76-45cc-ac46-32dc5c91116e?lang=pt_BR"],
+        credentialUrl: "https://cursos.alura.com.br/certificate/e5cb9ef3-da76-45cc-ac46-32dc5c91116e?lang=pt_BR"
     },
     {
-        name: "Redis",
+        name: "Redis - manipulação de dados: Strings, Listas e Conjuntos",
         issuer: "Alura",
         year: 2025,
-        credentialUrl: ["https://cursos.alura.com.br/certificate/b5a25c42-ef76-4928-8ce0-8c1127893be4?lang=pt_BR", "https://cursos.alura.com.br/certificate/37aded70-f018-4995-98c1-96f321e4da8d?lang=pt_BR"]
+        credentialUrl: "https://cursos.alura.com.br/certificate/b5a25c42-ef76-4928-8ce0-8c1127893be4?lang=pt_BR"
+        // "https://cursos.alura.com.br/certificate/37aded70-f018-4995-98c1-96f321e4da8d?lang=pt_BR"]
     },
     {
-        name: "Figma",
+        name: "Figma - Introdução",
         issuer: "Alura",
         year: 2025,
-        credentialUrl: ["https://cursos.alura.com.br/certificate/ba8cbfd5-fb70-4ea9-bed2-96ce01affd8a?lang=pt_BR", "https://cursos.alura.com.br/certificate/37aded70-f018-4995-98c1-96f321e4da8d?lang=pt_BR"]
+        credentialUrl: "https://cursos.alura.com.br/certificate/ba8cbfd5-fb70-4ea9-bed2-96ce01affd8a?lang=pt_BR"
     },
     {
-        name: "MongoDB",
+        name: "MongoDB - Modelagem de Dados",
         issuer: "Alura",
         year: 2025,
-        credentialUrl: ["https://cursos.alura.com.br/certificate/ca228af2-c520-4d28-926e-bdfc55ba7c7e?lang=pt_BR", "https://cursos.alura.com.br/certificate/ba8cbfd5-fb70-4ea9-bed2-96ce01affd8a?lang=pt_BR"]
+        credentialUrl: "https://cursos.alura.com.br/certificate/ca228af2-c520-4d28-926e-bdfc55ba7c7e?lang=pt_BR"
+        //, "https://cursos.alura.com.br/certificate/ba8cbfd5-fb70-4ea9-bed2-96ce01affd8a?lang=pt_BR"]
     }
 ];

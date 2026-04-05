@@ -1,6 +1,6 @@
 interface SkillBadgeProps {
     label: string;
-    category?: "frontend" | "backend" | "design" | "tools";
+    category?: "frontend" | "backend" | "art & design" | "tools" | "other tech and languages";
 }
 
 export default function SkillBadge({ label }: SkillBadgeProps) {

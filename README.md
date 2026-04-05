@@ -15,6 +15,7 @@
 
 ## To Do
 - [x] Implementar versão inicial
+- [ ] Realizar deploy da V1
 - [ ] Adicionar ilustrações (Eu, Dudu, meus passarinhos e outros cacarecos)
 - [ ] Realizar curadoria de trabalhos artísticos
 - [ ] Adicionar mais projetos a página de projetos de software

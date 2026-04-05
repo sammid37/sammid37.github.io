@@ -6,8 +6,9 @@ import SectionHeader from "@/components/ui/SectionHeader";
 const categoryLabels: Record<string, string> = {
     frontend: "Frontend",
     backend: "Backend",
-    design: "Design",
+    "art & design": "Arte & Design",
     tools: "Ferramentas",
+    "other tech and languages": "Outras Tecnologias",
 };
 
 export default function SkillsSection() {
